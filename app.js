@@ -59,3 +59,22 @@ window.location.href = "home.html";
         alert(error.code + "\n" + error.message);
     }
 };
+import {
+  onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
+// 自动检测登录状态
+onAuthStateChanged(auth, (user) => {
+
+    if (user) {
+
+        // 已登录
+        window.location.href = "home.html";
+
+    } else {
+
+        console.log("用户未登录");
+
+    }
+
+});

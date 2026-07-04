@@ -100,3 +100,64 @@ body{
 
 .card h1{
    
+.table{
+
+width:100%;
+
+margin-top:20px;
+
+border-collapse:collapse;
+
+background:white;
+
+}
+
+.table th{
+
+background:#2F80FF;
+
+color:white;
+
+padding:12px;
+
+}
+
+.table td{
+
+padding:12px;
+
+text-align:center;
+
+border-bottom:1px solid #ddd;
+
+}
+
+.table button{
+
+padding:8px 15px;
+
+border:none;
+
+border-radius:6px;
+
+cursor:pointer;
+
+margin:2px;
+
+}
+
+.edit{
+
+background:#2F80FF;
+
+color:white;
+
+}
+
+.delete{
+
+background:#ff4d4f;
+
+color:white;
+
+}

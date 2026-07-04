@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JiaHao Club</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+width:320px;
+background:#2F80FF;
+padding:28px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
+
+h1{
+color:#fff;
+text-align:center;
+margin-bottom:8px;
+font-size:32px;
+}
+
+p{
+color:#fff;
+text-align:center;
+margin-bottom:25px;
+font-size:14px;
+}
+
+.input{
+width:100%;
+height:48px;
+border:none;
+outline:none;
+border-radius:10px;
+padding:0 15px;
+font-size:15px;
+margin-bottom:15px;
+}
+
+button{
+width:100%;
+height:48px;
+border:none;
+border-radius:10px;
+background:#fff;
+color:#2F80FF;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#ececec;
+}
+
+.login{
+margin-top:18px;
+text-align:center;
+color:#fff;
+font-size:14px;
+}
+
+.login a{
+color:#fff;
+font-weight:bold;
+text-decoration:none;
+}
+
+.footer{
+margin-top:20px;
+text-align:center;
+color:#fff;
+font-size:12px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>JiaHao Club</h1>
+
+<p>创建您的账号</p>
+
+<input id="username" class="input" type="text" placeholder="用户名">
+
+<input id="email" class="input" type="email" placeholder="邮箱地址">
+
+<input id="password" class="input" type="password" placeholder="密码">
+
+<input id="password2" class="input" type="password" placeholder="确认密码">
+
+<button onclick="register()">注册</button>
+
+<div class="login">
+已有账号？
+<a href="#" onclick="login()">立即登录</a>
+</div>
+
+<div class="footer">
+注册即表示您同意用户协议和隐私政策
+</div>
+
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>

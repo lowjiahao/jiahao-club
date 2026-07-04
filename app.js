@@ -52,6 +52,7 @@ window.login = async function () {
         }
 
         alert("登录成功！");
+window.location.href = "home.html";
         // window.location.href = "home.html";
 
     } catch (error) {
